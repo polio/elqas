@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="eLQAS: Electronic Lot Quality Assurance Sampling : Everything you need to implement eLQAS on mobile devices">
+    <meta name="description" content="Project name : Tag line">
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>eLQAS: Electronic Lot Quality Assurance Sampling</title>
+    <title>Project name</title>
   </head>
 
   <body>
@@ -18,8 +18,8 @@
         <header class="inner">
           <a id="forkme_banner" href="https://github.com/polio/elqas">View on GitHub</a>
 
-          <h1 id="project_title">eLQAS: Electronic Lot Quality Assurance Sampling</h1>
-          <h2 id="project_tagline">Everything you need to implement eLQAS on mobile devices</h2>
+          <h1 id="project_title">Project name</h1>
+          <h2 id="project_tagline">Tag line</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/polio/elqas/zipball/master">Download this project as a .zip file</a>
@@ -31,154 +31,14 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h2>
-<a id="overview-and-background" class="anchor" href="#overview-and-background" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview and Background</h2>
-
-<p>This website contains all the information you will need to implement Electronic Lot Quality Assurance Sampling (eLQAS) on mobile devices. eLQAS was developed by the <a href="http://www.gatesfoundation.org/What-We-Do/Global-Development/Polio">Bill and Melinda Gates Foundation</a> and <a href="http://nafundi.com/">Nafundi</a> to improve the way we measure polio campaign coverage. </p>
-
-<p>You can read more about eLQAS and the pilot project in South Sudan on <a href="http://nafundi.com/blog/posts/elqas-collecting-real-time-polio-vaccination-data-with-odk/">Nafundi's blog</a>.</p>
-
-<h3>
-<a id="lqas" class="anchor" href="#lqas" aria-hidden="true"><span class="octicon octicon-link"></span></a>LQAS</h3>
-
-<p>Lot Quality Assurance Sampling (LQAS) is a rapid survey method to assess the quality of vaccination coverage following supplementary immunization activities in pre-defined areas such as a health district (lots) using a small sample size.</p>
-
-<p>For more information about LQAS, read the WHO's <a href="http://polioeradication.org/portals/0/document/research/opvdelivery/lqas.pdf">LQAS field manual</a>.</p>
-
-<h3>
-<a id="elqas" class="anchor" href="#elqas" aria-hidden="true"><span class="octicon octicon-link"></span></a>eLQAS</h3>
-
-<p>eLQAS is an electronic version of LQAS that uses phones and tablets to improve LQAS on paper. eLQAS enables real time results, increased data quality, improved accountability, easier implementation, and support for multiple languages. </p>
-
-<ul>
-<li><p><strong>Real time results</strong>. If internet connectivity is available, data collected in eLQAS can be instantly sent over cellular or WiFi networks to supervisors. If internet connectivity is not available, it will store the data locally on the device until connectivity is available, at which point it can be sent the data out to supervisors.</p></li>
-<li><p><strong>Increased data quality</strong>. eLQAS has built-in checks that constraints inputs and standardizes responses for easier analysis.</p></li>
-<li><p><strong>Improved accountability</strong>. Each eLQAS submission comes with GPS coordinates of each house and start/end times of each form to ensure proper coverage and accountability.</p></li>
-<li><p><strong>Easier implementation</strong>. eLQAS walks surveyor through questions, automates analysis calculations, and reduces paper work and training.</p></li>
-<li><p><strong>Multiple languages</strong>. eLQAS comes translated in English and French, but can be translated to multiple languages by editing the form in Excel.</p></li>
-</ul>
-
-<h3>
-<a id="open-data-kit" class="anchor" href="#open-data-kit" aria-hidden="true"><span class="octicon octicon-link"></span></a>Open Data Kit</h3>
-
-<p>eLQAS is implemented as a form within <a href="http://opendatakit.org">Open Data Kit</a> (ODK) platform. ODK is a free and open-source set of tools which replace paper forms and surveys with phones and tablets. It's great for field staff who need to collect data accurately, quickly, off-line and at scale. </p>
-
-<p>ODK is safe, secure, and easy to use. It has been used by tens of thousands of organizations (e.g., WHO, WFP, USAID, CDC, Red Cross) to collect millions of forms. ODK provides an out-of-the-box solution to:</p>
-
-<ol>
-<li>Build a data collection form or survey</li>
-<li>Collect the data on a mobile device and send it to a server</li>
-<li>Aggregate the collected data on a server and extract it in useful formats</li>
-</ol>
-
-<p>Be sure to watch ODK's <a href="http://youtube.com/watch?v=HqqUdfz9Uyc">overview video</a>, read <a href="http://opendatakit.org/use">usage directions</a> and review <a href="http://opendatakit.org/help">help resources</a> for more information.</p>
-
-<h2>
-<a id="implementation-guide" class="anchor" href="#implementation-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Implementation Guide</h2>
-
-<p>In order to implement eLQAS you will need implementors, Android devices, an ODK aggregate server, and the eLQAS collection form and analysis tool.</p>
-
-<p>eLQAS can be treated as a standard ODK deployment, but following these steps will help ensure a successful and high-quality survey. </p>
-
-<ol>
-<li>
-<p><strong>Plan for LQAS</strong></p>
-
-<p>a. Read the <a href="http://polioeradication.org/portals/0/document/research/opvdelivery/lqas.pdf">LQAS field manual</a></p>
-
-<p>b. Identify the lots and clusters to be surveyed using the methodology described in the manual. </p>
-
-<p>c. Plan for training of the surveyors and survey logistics as you normally would for the paper form.</p>
-</li>
-<li>
-<p><strong>Prepare electronic form</strong></p>
-
-<p>a. Download the <a href="TODO">eLQAS Collection Form</a>.</p>
-
-<p>b. Update the form with provinces/clusters/districts specific to the region of interest. This is done by changing the <em>External Choices</em> tab in the form.</p>
-
-<p>c. Convert the Excel form to XML format, which can be read by ODK using the online tool <a href="http://xlsform.opendatakit.org">XLSForm</a> (requires Internet connection) or <a href="http://nafundi.com/products">XLSForm Offline </a>.</p>
-</li>
-<li>
-<p><strong>Setup server</strong></p>
-
-<p>a. The easiest option is to <a href="http://nafundi.com/contact">contact Nafundi</a>, who can quickly set up a private server on a cloud service. You as the implementer will control who has access to the server.</p>
-
-<p>b. Alternately, follow step-by-step instructions on <a href="http://opendatakit.org/use/aggregate">installing ODK Aggregate</a> to set up an ODK Aggregate server. </p>
-</li>
-<li>
-<p><strong>Configure devices</strong></p>
-
-<p>a. Any Android device (phone or tablet) will work, but newer devices running Android 4 or later are recommended. We recommend distributing one device per survey team. Additional devices may be useful for training.</p>
-
-<p>b. Where possible, configure each device with data package on a local cellular or Wi-Fi network. This is required for real-time data collection.</p>
-
-<p>c. Download the free application ODK Collect from the <a href="https://play.google.com/store/apps/details?id=org.odk.collect.android&amp;hl=en">Google Play</a> store (requires Internet connection on device) or install it through a USB cable after downloading it from the <a href="https://opendatakit.org/downloads">ODK Downloads</a> page.</p>
-
-<p>d. Configure ODK Collect to download forms and send data to the Aggregate server from Step 3. </p>
-</li>
-<li>
-<p><strong>Train surveyors</strong></p>
-
-<p>a. Plan for between two to three days of training on survey methodology, as described in Chapter IV of the LQAS field manual.</p>
-
-<p>b. Depending on surveyor experience, plan one additional day of training the surveyors on how to use ODK Collect. The ODK community has useful <a href="https://opendatakit.org/help/training-guides">training guides and strategies</a> you should review. </p>
-
-<p>c. We highly recommend survey training in the field with the devices, in an area near the training is taking place, to address any issues with the survey methodology, technical issues with the devices, and to ensure data collected can be viewed and analyzed easily.</p>
-</li>
-<li>
-<p><strong>Implement eLQAS</strong></p>
-
-<p>a. We recommend surveyors be given backup paper copies of the survey, in case of device failure. </p>
-</li>
-<li>
-<p><strong>Analyze results</strong></p>
-
-<p>a. Download the <a href="TODO">eLQAS Analysis Tool</a>.</p>
-
-<p>b. The raw data is available on your ODK Aggregate server, but for viewing and analyzing the data, it is easiest to publish the data to <a href="http://google.com/fusiontable">Google Fusion Tables</a>, using the <em>Outer-Join</em> link in Published Data.</p>
-
-<p>c. Use Analysis Tool to classify Lot coverage according to the WHO guidelines. The Analysis Tool relies on the format of the <em>Outer Join</em> data from Google Fusion Tables.</p>
-
-<p>d. Google Fusion Tables also allows you to map the results of the campaign and share underlying data.</p>
-</li>
-</ol>
-
-<h2>
-<a id="notes-and-tips" class="anchor" href="#notes-and-tips" aria-hidden="true"><span class="octicon octicon-link"></span></a>Notes and Tips</h2>
-
-<h3>
-<a id="form-design" class="anchor" href="#form-design" aria-hidden="true"><span class="octicon octicon-link"></span></a>Form design</h3>
-
-<ul>
-<li><p>Only change the provinces, districts, lots, and clusters. Changing other parts of the form may introduce technical glitches into your campaign.</p></li>
-<li><p>Labels vs name Do not use spaces or special characters in names of districts or go over the 32 character limit. Doing so will likely break downstream analysis of resulting data. Using spaces or special characters in labels is fine.</p></li>
-</ul>
-
-<h3>
-<a id="training" class="anchor" href="#training" aria-hidden="true"><span class="octicon octicon-link"></span></a>Training</h3>
-
-<ul>
-<li>Most of the questions and difficulties in the training will be about LQAS in general, rather than how to use the mobile devices. Plan accordingly.</li>
-</ul>
-
-<h3>
-<a id="more-help" class="anchor" href="#more-help" aria-hidden="true"><span class="octicon octicon-link"></span></a>More help</h3>
-
-<ul>
-<li><a href="http://polioeradication.org/portals/0/document/research/opvdelivery/lqas.pdf">LQAS Field Manual</a></li>
-<li><a href="http://opendatakit.org/help">ODK Help Resources</a></li>
-<li><a href="http://nafundi.com/blog/posts/elqas-collecting-real-time-polio-vaccination-data-with-odk">eLQAS Experience report from Nafundi</a></li>
-<li><a href="http://nafundi.com/contact">Contact Nafundi</a></li>
-<li><a href="mailto:arend.voorman@gatesfoundation.org">Contact Gates Foundation</a></li>
-</ul>
+        <p>Body</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">eLQAS: Electronic Lot Quality Assurance Sampling maintained by <a href="https://github.com/polio">polio</a></p>
+        <p class="copyright">Project name maintained by <a href="https://github.com/polio">polio</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
