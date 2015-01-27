@@ -58,7 +58,7 @@ eLQAS can be treated as a standard ODK deployment, but following these steps wil
 
 2. **Prepare electronic form**
 
-	a. Download the [eLQAS Collection Form](assets/elqas_form.xlsx).
+	a. Download the [eLQAS Collection Form v1](assets/elqas_form_v1.xlsx).
 
     b. Update the form with provinces/clusters/districts specific to the region of interest. This is done by changing the *External Choices* tab in the form.
 
@@ -94,7 +94,7 @@ eLQAS can be treated as a standard ODK deployment, but following these steps wil
 
 7. **Analyze results**
 
-	a. Download the [eLQAS Analysis Tool](assets/elqas_analysis.xlsx).
+	a. Download the [eLQAS Analysis Tool v1](assets/elqas_analysis_v1.xlsx).
 
     b. The raw data is available on your ODK Aggregate server, but for viewing and analyzing the data, it is easiest to publish the data to [Google Fusion Tables](http://google.com/fusiontable), using the *Outer-Join* link in Published Data.
 
