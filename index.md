@@ -26,7 +26,7 @@ eLQAS is an electronic version of LQAS that uses phones and tablets to improve L
 
 * **Easier implementation**. eLQAS walks surveyor through questions, automates analysis calculations, and reduces paper work and training.
 
-* **Multiple languages**. eLQAS comes translated in English and French, but can be translated to multiple languages by editing the form in Excel.
+* **Multiple languages**. eLQAS comes translated in English, Spanish, and French, with Pashto and Dari translations coming shortly. You can also translate the form yourself by editing it in Excel.
 
 
 ### Open Data Kit
